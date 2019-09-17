@@ -29,18 +29,18 @@
         private void InitializeComponent()
         {
             this.customerInfoGroupBox = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.customerNameTextBox = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.contactNoTextBox = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.addressTextBox = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.orderQuantityTextBox = new System.Windows.Forms.TextBox();
-            this.orderIteamComboBox = new System.Windows.Forms.ComboBox();
-            this.customerInformationAddButton = new System.Windows.Forms.Button();
             this.showCustomerInfoButton = new System.Windows.Forms.Button();
+            this.customerInformationAddButton = new System.Windows.Forms.Button();
+            this.orderIteamComboBox = new System.Windows.Forms.ComboBox();
+            this.orderQuantityTextBox = new System.Windows.Forms.TextBox();
+            this.addressTextBox = new System.Windows.Forms.TextBox();
+            this.contactNoTextBox = new System.Windows.Forms.TextBox();
+            this.customerNameTextBox = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.showInfoRichTextBox = new System.Windows.Forms.RichTextBox();
             this.customerInfoGroupBox.SuspendLayout();
             this.SuspendLayout();
@@ -67,99 +67,16 @@
             this.customerInfoGroupBox.TabStop = false;
             this.customerInfoGroupBox.Text = "Customer Information";
             // 
-            // label1
+            // showCustomerInfoButton
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 55);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(118, 16);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Customer Name";
-            // 
-            // customerNameTextBox
-            // 
-            this.customerNameTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.customerNameTextBox.Location = new System.Drawing.Point(136, 55);
-            this.customerNameTextBox.Multiline = true;
-            this.customerNameTextBox.Name = "customerNameTextBox";
-            this.customerNameTextBox.Size = new System.Drawing.Size(132, 22);
-            this.customerNameTextBox.TabIndex = 1;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(12, 91);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(84, 16);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Contact No";
-            // 
-            // contactNoTextBox
-            // 
-            this.contactNoTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.contactNoTextBox.Location = new System.Drawing.Point(136, 91);
-            this.contactNoTextBox.Multiline = true;
-            this.contactNoTextBox.Name = "contactNoTextBox";
-            this.contactNoTextBox.Size = new System.Drawing.Size(132, 22);
-            this.contactNoTextBox.TabIndex = 1;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(12, 128);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(66, 16);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Address";
-            // 
-            // addressTextBox
-            // 
-            this.addressTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addressTextBox.Location = new System.Drawing.Point(136, 128);
-            this.addressTextBox.Multiline = true;
-            this.addressTextBox.Name = "addressTextBox";
-            this.addressTextBox.Size = new System.Drawing.Size(132, 22);
-            this.addressTextBox.TabIndex = 1;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(12, 186);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(89, 16);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Order Iteam";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(12, 228);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(107, 16);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "Order Quantity";
-            // 
-            // orderQuantityTextBox
-            // 
-            this.orderQuantityTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.orderQuantityTextBox.Location = new System.Drawing.Point(136, 228);
-            this.orderQuantityTextBox.Multiline = true;
-            this.orderQuantityTextBox.Name = "orderQuantityTextBox";
-            this.orderQuantityTextBox.Size = new System.Drawing.Size(132, 22);
-            this.orderQuantityTextBox.TabIndex = 1;
-            // 
-            // orderIteamComboBox
-            // 
-            this.orderIteamComboBox.FormattingEnabled = true;
-            this.orderIteamComboBox.Location = new System.Drawing.Point(136, 186);
-            this.orderIteamComboBox.Name = "orderIteamComboBox";
-            this.orderIteamComboBox.Size = new System.Drawing.Size(132, 28);
-            this.orderIteamComboBox.TabIndex = 2;
+            this.showCustomerInfoButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.showCustomerInfoButton.Location = new System.Drawing.Point(149, 290);
+            this.showCustomerInfoButton.Name = "showCustomerInfoButton";
+            this.showCustomerInfoButton.Size = new System.Drawing.Size(83, 35);
+            this.showCustomerInfoButton.TabIndex = 3;
+            this.showCustomerInfoButton.Text = "Show";
+            this.showCustomerInfoButton.UseVisualStyleBackColor = true;
+            this.showCustomerInfoButton.Click += new System.EventHandler(this.showCustomerInfoButton_Click);
             // 
             // customerInformationAddButton
             // 
@@ -172,16 +89,99 @@
             this.customerInformationAddButton.UseVisualStyleBackColor = true;
             this.customerInformationAddButton.Click += new System.EventHandler(this.customerInformationAddButton_Click);
             // 
-            // showCustomerInfoButton
+            // orderIteamComboBox
             // 
-            this.showCustomerInfoButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.showCustomerInfoButton.Location = new System.Drawing.Point(149, 290);
-            this.showCustomerInfoButton.Name = "showCustomerInfoButton";
-            this.showCustomerInfoButton.Size = new System.Drawing.Size(83, 35);
-            this.showCustomerInfoButton.TabIndex = 3;
-            this.showCustomerInfoButton.Text = "Show";
-            this.showCustomerInfoButton.UseVisualStyleBackColor = true;
-            this.showCustomerInfoButton.Click += new System.EventHandler(this.showCustomerInfoButton_Click);
+            this.orderIteamComboBox.FormattingEnabled = true;
+            this.orderIteamComboBox.Location = new System.Drawing.Point(136, 186);
+            this.orderIteamComboBox.Name = "orderIteamComboBox";
+            this.orderIteamComboBox.Size = new System.Drawing.Size(132, 37);
+            this.orderIteamComboBox.TabIndex = 2;
+            // 
+            // orderQuantityTextBox
+            // 
+            this.orderQuantityTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.orderQuantityTextBox.Location = new System.Drawing.Point(136, 228);
+            this.orderQuantityTextBox.Multiline = true;
+            this.orderQuantityTextBox.Name = "orderQuantityTextBox";
+            this.orderQuantityTextBox.Size = new System.Drawing.Size(132, 22);
+            this.orderQuantityTextBox.TabIndex = 1;
+            // 
+            // addressTextBox
+            // 
+            this.addressTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addressTextBox.Location = new System.Drawing.Point(136, 128);
+            this.addressTextBox.Multiline = true;
+            this.addressTextBox.Name = "addressTextBox";
+            this.addressTextBox.Size = new System.Drawing.Size(132, 22);
+            this.addressTextBox.TabIndex = 1;
+            // 
+            // contactNoTextBox
+            // 
+            this.contactNoTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.contactNoTextBox.Location = new System.Drawing.Point(136, 91);
+            this.contactNoTextBox.Multiline = true;
+            this.contactNoTextBox.Name = "contactNoTextBox";
+            this.contactNoTextBox.Size = new System.Drawing.Size(132, 22);
+            this.contactNoTextBox.TabIndex = 1;
+            // 
+            // customerNameTextBox
+            // 
+            this.customerNameTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.customerNameTextBox.Location = new System.Drawing.Point(136, 55);
+            this.customerNameTextBox.Multiline = true;
+            this.customerNameTextBox.Name = "customerNameTextBox";
+            this.customerNameTextBox.Size = new System.Drawing.Size(132, 22);
+            this.customerNameTextBox.TabIndex = 1;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(12, 228);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(154, 25);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "Order Quantity";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(12, 186);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(126, 25);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "Order Iteam";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(12, 128);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(92, 25);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Address";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(12, 91);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(120, 25);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Contact No";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(12, 55);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(167, 25);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Customer Name";
             // 
             // showInfoRichTextBox
             // 
@@ -195,10 +195,10 @@
             // 
             // CoffeeShopUsingList
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.ClientSize = new System.Drawing.Size(885, 501);
+            this.ClientSize = new System.Drawing.Size(1024, 613);
             this.Controls.Add(this.showInfoRichTextBox);
             this.Controls.Add(this.customerInfoGroupBox);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
