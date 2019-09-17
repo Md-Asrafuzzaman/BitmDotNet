@@ -52,6 +52,12 @@
     <Compile Include="CoffeeShopHome.Designer.cs">
       <DependentUpon>CoffeeShopHome.cs</DependentUpon>
     </Compile>
+    <Compile Include="CoffeeShopUsingList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CoffeeShopUsingList.Designer.cs">
+      <DependentUpon>CoffeeShopUsingList.cs</DependentUpon>
+    </Compile>
     <Compile Include="CoffeShopUI.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,6 +68,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="CoffeeShopHome.resx">
       <DependentUpon>CoffeeShopHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CoffeeShopUsingList.resx">
+      <DependentUpon>CoffeeShopUsingList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CoffeShopUI.resx">
       <DependentUpon>CoffeShopUI.cs</DependentUpon>
