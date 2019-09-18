@@ -47,8 +47,6 @@ namespace CoffeeShop
             if (contacts[i] != contactNoTextBox.Text)
             {
                 contacts.Add(contactNoTextBox.Text);
-            
-                contacts.Add(contactNoTextBox.Text);
             }
             else
                 MessageBox.Show(contacts[i]+" This number Already Used");
