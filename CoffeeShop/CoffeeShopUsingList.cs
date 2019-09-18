@@ -13,7 +13,7 @@ namespace CoffeeShop
     public partial class CoffeeShopUsingList : Form
     {
         List<string> names = new List<string> { };
-        List<string> contacts = new List<string> { };
+        List<string> contacts = new List<string> {"09666"};
         List<string> addresses = new List<string> { };
         List<string> orders = new List<string> { };
         List<int> quantities = new List<int> { };
@@ -29,8 +29,7 @@ namespace CoffeeShop
         //All Customer Information Show from List using this Method
         private void showCustomerInfoButton_Click(object sender, EventArgs e)
         {
-
-            showInfoRichTextBox.Text = "Purchases Information : ";
+            showInfoRichTextBox.Clear();
             customer_Information_Show_From_List();
         }
 
@@ -45,9 +44,17 @@ namespace CoffeeShop
         protected void customer_Information_Assign_To_List()
         {
             names.Add(customerNameTextBox.Text);
-            contacts.Add(contactNoTextBox.Text);
+            if (contacts[i] != contactNoTextBox.Text)
+            {
+                contacts.Add(contactNoTextBox.Text);
+            
+                contacts.Add(contactNoTextBox.Text);
+            }
+            else
+                MessageBox.Show(contacts[i]+" This number Already Used");
+            
             addresses.Add(addressTextBox.Text);
-            if (!String.IsNullOrEmpty(orderIteamComboBox.Text) || !String.IsNullOrEmpty(orderQuantityTextBox.Text))
+            if (!String.IsNullOrEmpty(orderIteamComboBox.Text) && !String.IsNullOrEmpty(orderQuantityTextBox.Text))
             {
                 orders.Add(orderIteamComboBox.Text);
                 quantities.Add(Convert.ToInt32(orderQuantityTextBox.Text));
