@@ -17,31 +17,32 @@ namespace CoffeeShop
         List<string> addresses = new List<string> { };
         List<string> orders = new List<string> { };
         List<int> quantities = new List<int> { };
-        int i;
+        int i=0;
         string message = "";
+        int price;
+        double total_price;
 
         public CoffeeShopUsingList()
         {
             InitializeComponent();
         }
 
+        //All Customer Information Show from List using this Method
         private void showCustomerInfoButton_Click(object sender, EventArgs e)
         {
-            for (i = 0; i < names.Count(); i++)
-            {
-                message += "Customer Name : " + names[i] + "\nContact No: " + contacts[i] + "\nAddress : " + addresses[i]
-                    + "\nOrder Item : " + orders[i] + "\nOrder Quantity : " + quantities[i];
-            }
-            MessageBox.Show(message);
+
+            showInfoRichTextBox.Clear();
+            customer_Information_Show_From_List();
         }
 
+        //Customer Information Added to List using this Method
         private void customerInformationAddButton_Click(object sender, EventArgs e)
         {
-           customer_Information_Assign_To_List();
-           
+            customer_Information_Assign_To_List();
+            customer_Information_Show_From_List_For_AddButton();
         }
 
-        //customer_Information_Assign_To_List
+        //customer_Information_Assign_To_List using this Method
         private void customer_Information_Assign_To_List()
         {
             names.Add(customerNameTextBox.Text);
@@ -54,18 +55,42 @@ namespace CoffeeShop
             }
             else
                 MessageBox.Show("Order Item and Order Quantity Field Required");
+            customer_Information_Reset_Method();
+            
         }
 
-        //customer_Information_Show_From_List
-
+        //All customer_Information_Raise_From_List
         private void customer_Information_Show_From_List()
         {
-            for(i = 0; i < names.Count(); i++)
+            for (i = 0; i < orders.Count(); i++)
             {
                 message += "Customer Name : " + names[i] + "\nContact No: " + contacts[i] + "\nAddress : " + addresses[i]
-                    + "\nOrder Item : " + orders[i] + "\nOrder Quantity : " + quantities[i];
-            }
+                + "\nOrder Item : " + orders[i] + "\nOrder Quantity : " + quantities[i]+"\n\n";
+            }        
+            showInfoRichTextBox.Text = message;
         }
+
+        //customer_Information_Raise_From_List that are recently Added..................
+        private void customer_Information_Show_From_List_For_AddButton()
+        {
+            message = "Customer Name : " + names[i] + "\nContact No: " + contacts[i] + "\nAddress : " + addresses[i]
+                + "\nOrder Item : " + orders[i] + "\nOrder Quantity : " + quantities[i]+"\n\n";
+            showInfoRichTextBox.Text = message;
+            i++;
+        }
+
+        //customer_Information_reset_....
+        private void customer_Information_Reset_Method()
+        {
+            customerNameTextBox.Clear();
+            contactNoTextBox.Clear();
+            addressTextBox.Clear();
+            orderIteamComboBox.Text = "";
+            orderQuantityTextBox.Clear();
+        }
+
+        //Total purchase amaunt calculation................
+        
 
 
     }

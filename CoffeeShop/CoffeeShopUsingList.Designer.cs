@@ -91,10 +91,16 @@
             // 
             // orderIteamComboBox
             // 
+            this.orderIteamComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.orderIteamComboBox.FormattingEnabled = true;
+            this.orderIteamComboBox.Items.AddRange(new object[] {
+            "Black Coffee",
+            "Cold Coffee",
+            "Hot Coffee",
+            "Regular Coffee"});
             this.orderIteamComboBox.Location = new System.Drawing.Point(136, 186);
             this.orderIteamComboBox.Name = "orderIteamComboBox";
-            this.orderIteamComboBox.Size = new System.Drawing.Size(132, 37);
+            this.orderIteamComboBox.Size = new System.Drawing.Size(132, 24);
             this.orderIteamComboBox.TabIndex = 2;
             // 
             // orderQuantityTextBox
@@ -139,7 +145,7 @@
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(12, 228);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(154, 25);
+            this.label5.Size = new System.Drawing.Size(107, 16);
             this.label5.TabIndex = 0;
             this.label5.Text = "Order Quantity";
             // 
@@ -149,7 +155,7 @@
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(12, 186);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(126, 25);
+            this.label4.Size = new System.Drawing.Size(89, 16);
             this.label4.TabIndex = 0;
             this.label4.Text = "Order Iteam";
             // 
@@ -159,7 +165,7 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(12, 128);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(92, 25);
+            this.label3.Size = new System.Drawing.Size(66, 16);
             this.label3.TabIndex = 0;
             this.label3.Text = "Address";
             // 
@@ -169,7 +175,7 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(12, 91);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(120, 25);
+            this.label2.Size = new System.Drawing.Size(84, 16);
             this.label2.TabIndex = 0;
             this.label2.Text = "Contact No";
             // 
@@ -179,7 +185,7 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(12, 55);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(167, 25);
+            this.label1.Size = new System.Drawing.Size(118, 16);
             this.label1.TabIndex = 0;
             this.label1.Text = "Customer Name";
             // 
@@ -195,7 +201,7 @@
             // 
             // CoffeeShopUsingList
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 29F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.ClientSize = new System.Drawing.Size(1024, 613);
