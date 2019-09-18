@@ -20,8 +20,7 @@ namespace CoffeeShop
         int i=0;
         string message = "";
         int price;
-        double total_price;
-
+        int total_price;
         public CoffeeShopUsingList()
         {
             InitializeComponent();
@@ -31,7 +30,7 @@ namespace CoffeeShop
         private void showCustomerInfoButton_Click(object sender, EventArgs e)
         {
 
-            showInfoRichTextBox.Clear();
+            showInfoRichTextBox.Text = "Purchases Information : ";
             customer_Information_Show_From_List();
         }
 
@@ -43,7 +42,7 @@ namespace CoffeeShop
         }
 
         //customer_Information_Assign_To_List using this Method
-        private void customer_Information_Assign_To_List()
+        protected void customer_Information_Assign_To_List()
         {
             names.Add(customerNameTextBox.Text);
             contacts.Add(contactNoTextBox.Text);
@@ -52,6 +51,30 @@ namespace CoffeeShop
             {
                 orders.Add(orderIteamComboBox.Text);
                 quantities.Add(Convert.ToInt32(orderQuantityTextBox.Text));
+                
+                if (orders[i] == "Black Coffee")
+                {
+                    price = 120;
+                }
+                else if (orders[i] == "Cold Coffee")
+                {
+                    price = 100;
+
+                }
+                else if (orders[i] == "Hot Coffee")
+                {
+                    price = 90;
+                }
+                else if (orders[i] == "Regular Coffee")
+                {
+                    price = 80;
+                }
+                else
+                {
+                    price = 0;
+                }
+                total_price = price * quantities[i];
+               
             }
             else
                 MessageBox.Show("Order Item and Order Quantity Field Required");
@@ -65,7 +88,7 @@ namespace CoffeeShop
             for (i = 0; i < orders.Count(); i++)
             {
                 message += "Customer Name : " + names[i] + "\nContact No: " + contacts[i] + "\nAddress : " + addresses[i]
-                + "\nOrder Item : " + orders[i] + "\nOrder Quantity : " + quantities[i]+"\n\n";
+                + "\nOrder Item : " + orders[i] + "\nOrder Quantity : " + quantities[i]+"\nTotal Price : "+total_price+"\n\n";
             }        
             showInfoRichTextBox.Text = message;
         }
@@ -74,7 +97,7 @@ namespace CoffeeShop
         private void customer_Information_Show_From_List_For_AddButton()
         {
             message = "Customer Name : " + names[i] + "\nContact No: " + contacts[i] + "\nAddress : " + addresses[i]
-                + "\nOrder Item : " + orders[i] + "\nOrder Quantity : " + quantities[i]+"\n\n";
+                + "\nOrder Item : " + orders[i] + "\nOrder Quantity : " + quantities[i]+ "\nTotal Price : " + total_price + "\n\n";
             showInfoRichTextBox.Text = message;
             i++;
         }
@@ -89,8 +112,7 @@ namespace CoffeeShop
             orderQuantityTextBox.Clear();
         }
 
-        //Total purchase amaunt calculation................
-        
+
 
 
     }
